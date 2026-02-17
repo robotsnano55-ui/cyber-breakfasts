@@ -3,128 +3,159 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cyber Breakfasts Koh Phangan | Ethical Hacking & AI Retreat</title>
+  <title>Cyber Breakfasts | Retro Wasteland Edition</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Retro Pixel Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    body {
+      font-family: 'Share Tech Mono', monospace;
+      background-color: #0a0f0a;
+      color: #33ff33;
+    }
+
+    /* CRT effect */
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 0, 0.03),
+        rgba(0, 255, 0, 0.03) 1px,
+        transparent 1px,
+        transparent 2px
+      );
+    }
+
+    .terminal-box {
+      border: 1px solid #33ff33;
+      background: rgba(0, 20, 0, 0.7);
+      box-shadow: 0 0 20px #00ff00;
+    }
+
+    .btn-retro {
+      border: 1px solid #33ff33;
+      padding: 12px 24px;
+      transition: 0.3s;
+    }
+
+    .btn-retro:hover {
+      background: #33ff33;
+      color: black;
+      box-shadow: 0 0 15px #00ff00;
+    }
   </style>
 </head>
-<body class="bg-gray-950 text-white">
 
-  <!-- NAVBAR -->
-  <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
-    <h1 class="text-2xl font-bold">Cyber Breakfasts</h1>
-    <div class="space-x-6 hidden md:block">
-      <a href="#program" class="hover:text-yellow-400">Program</a>
-      <a href="#about" class="hover:text-yellow-400">About</a>
-      <a href="#pricing" class="hover:text-yellow-400">Pricing</a>
-      <a href="#apply" class="bg-yellow-400 text-black px-4 py-2 rounded-xl font-semibold hover:bg-yellow-300">Apply</a>
-    </div>
-  </nav>
+<body>
 
-  <!-- HERO -->
-  <section class="text-center py-20 px-6 bg-gradient-to-b from-gray-900 to-gray-950">
-    <h2 class="text-5xl md:text-6xl font-extrabold mb-6">
-      Ethical Hacking & AI Retreat
-    </h2>
-    <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-      A 4-week immersive cybersecurity & AI program in Koh Phangan for entrepreneurs and digital nomads.
+  <!-- HERO SECTION -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-cover bg-center"
+    style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');">
+
+    <h1 class="text-5xl md:text-6xl mb-6 tracking-widest">
+      CYBER BREAKFASTS
+    </h1>
+
+    <p class="text-xl max-w-2xl mb-8">
+      Ethical Hacking & AI Training in the Digital Wasteland of Koh Phangan
     </p>
-    <a href="#apply" class="bg-yellow-400 text-black px-8 py-4 rounded-2xl font-bold text-lg hover:bg-yellow-300 transition">
-      Reserve Your Spot
+
+    <a href="#apply" class="btn-retro">
+      ENTER THE VAULT
     </a>
   </section>
 
   <!-- PROGRAM -->
-  <section id="program" class="py-20 px-6 max-w-6xl mx-auto">
-    <h3 class="text-4xl font-bold text-center mb-12">What You'll Learn</h3>
+  <section class="py-20 px-6 max-w-6xl mx-auto">
+    <h2 class="text-4xl text-center mb-12">[ PROGRAM MODULES ]</h2>
 
     <div class="grid md:grid-cols-3 gap-10">
-      <div class="bg-gray-900 p-8 rounded-2xl shadow-lg">
-        <h4 class="text-2xl font-semibold mb-4">🛡 Ethical Hacking</h4>
-        <p class="text-gray-400">
-          Learn penetration testing fundamentals in controlled lab environments.
-        </p>
+
+      <div class="terminal-box p-8">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+             class="mb-6 grayscale contrast-150">
+        <h3 class="text-2xl mb-4">ETHICAL HACKING</h3>
+        <p>Controlled lab penetration testing & digital defense.</p>
       </div>
 
-      <div class="bg-gray-900 p-8 rounded-2xl shadow-lg">
-        <h4 class="text-2xl font-semibold mb-4">🤖 AI Automation</h4>
-        <p class="text-gray-400">
-          Build GPT workflows, automate tasks, and create intelligent business systems.
-        </p>
+      <div class="terminal-box p-8">
+        <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769"
+             class="mb-6 grayscale contrast-150">
+        <h3 class="text-2xl mb-4">AI AUTOMATION</h3>
+        <p>Build AI agents and business automations.</p>
       </div>
 
-      <div class="bg-gray-900 p-8 rounded-2xl shadow-lg">
-        <h4 class="text-2xl font-semibold mb-4">🔐 Cybersecurity for Startups</h4>
-        <p class="text-gray-400">
-          Protect your business, data, and digital assets with real-world security strategies.
-        </p>
+      <div class="terminal-box p-8">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+             class="mb-6 grayscale contrast-150">
+        <h3 class="text-2xl mb-4">CYBER SECURITY</h3>
+        <p>Startup protection & digital survival strategies.</p>
       </div>
+
     </div>
   </section>
 
-  <!-- BREAKFAST FORMAT -->
-  <section class="bg-gray-900 py-20 px-6 text-center">
-    <h3 class="text-4xl font-bold mb-10">Business Breakfast Format</h3>
-    <div class="max-w-3xl mx-auto space-y-4 text-gray-300 text-lg">
-      <p>🥐 Networking Breakfast</p>
-      <p>🎤 60-Minute Live Workshop</p>
-      <p>💻 90-Minute Hands-On Lab</p>
-      <p>🧠 Mastermind & Discussion</p>
-    </div>
-  </section>
+  <!-- FORMAT -->
+  <section class="py-20 text-center bg-black">
+    <h2 class="text-4xl mb-10">[ DAILY PROTOCOL ]</h2>
 
-  <!-- ABOUT -->
-  <section id="about" class="py-20 px-6 max-w-5xl mx-auto text-center">
-    <h3 class="text-4xl font-bold mb-8">Why Koh Phangan?</h3>
-    <p class="text-gray-400 text-lg leading-relaxed">
-      Surrounded by tropical beaches and a thriving digital nomad community,
-      Koh Phangan provides the perfect environment for deep learning,
-      networking, and transformation.
-    </p>
+    <div class="space-y-4 text-lg">
+      <p>08:00 — NETWORKING RATION BREAKFAST</p>
+      <p>09:00 — LIVE TERMINAL SESSION</p>
+      <p>10:00 — HANDS-ON LAB</p>
+      <p>11:30 — STRATEGY COUNCIL</p>
+    </div>
   </section>
 
   <!-- PRICING -->
-  <section id="pricing" class="bg-gray-900 py-20 px-6 text-center">
-    <h3 class="text-4xl font-bold mb-12">Investment</h3>
+  <section class="py-20 px-6 text-center">
+    <h2 class="text-4xl mb-12">[ INVESTMENT ]</h2>
 
-    <div class="max-w-md mx-auto bg-gray-800 p-10 rounded-3xl shadow-xl">
-      <h4 class="text-3xl font-bold mb-4">$3,000</h4>
-      <p class="text-gray-400 mb-6">4-Week Immersive Program</p>
-      <ul class="text-gray-300 space-y-3 mb-8">
-        <li>✔ 22 Students Maximum</li>
-        <li>✔ Daily Workshops</li>
-        <li>✔ Hands-On Labs</li>
-        <li>✔ Networking Breakfasts</li>
-      </ul>
-      <a href="#apply" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-yellow-300">
-        Apply Now
-      </a>
+    <div class="terminal-box max-w-md mx-auto p-10">
+      <h3 class="text-3xl mb-6">$3,000</h3>
+      <p class="mb-6">4-WEEK IMMERSION</p>
+      <p>22 SURVIVORS PER COHORT</p>
     </div>
   </section>
 
   <!-- APPLY -->
-  <section id="apply" class="py-20 px-6 text-center max-w-4xl mx-auto">
-    <h3 class="text-4xl font-bold mb-8">Apply for the Next Cohort</h3>
-    <p class="text-gray-400 mb-8">
-      Limited to 22 participants. Secure your place in paradise.
-    </p>
+  <section id="apply" class="py-20 px-6 text-center">
+    <h2 class="text-4xl mb-10">[ JOIN THE VAULT ]</h2>
 
-    <form class="grid gap-6 max-w-xl mx-auto">
-      <input type="text" placeholder="Full Name" class="p-4 rounded-xl bg-gray-800 border border-gray-700 focus:outline-none focus:border-yellow-400">
-      <input type="email" placeholder="Email Address" class="p-4 rounded-xl bg-gray-800 border border-gray-700 focus:outline-none focus:border-yellow-400">
-      <textarea placeholder="Tell us about yourself" rows="4" class="p-4 rounded-xl bg-gray-800 border border-gray-700 focus:outline-none focus:border-yellow-400"></textarea>
-      <button type="submit" class="bg-yellow-400 text-black py-4 rounded-xl font-bold hover:bg-yellow-300 transition">
-        Submit Application
+    <form class="max-w-xl mx-auto space-y-6">
+
+      <input type="text"
+        placeholder="NAME"
+        class="w-full p-4 bg-black border border-green-500 text-green-400">
+
+      <input type="email"
+        placeholder="EMAIL"
+        class="w-full p-4 bg-black border border-green-500 text-green-400">
+
+      <textarea
+        placeholder="WHY SHOULD YOU SURVIVE?"
+        rows="4"
+        class="w-full p-4 bg-black border border-green-500 text-green-400"></textarea>
+
+      <button type="submit" class="btn-retro">
+        SUBMIT APPLICATION
       </button>
+
     </form>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-gray-950 py-10 text-center text-gray-500">
-    <p>© 2026 Cyber Breakfasts Koh Phangan. All rights reserved.</p>
+  <footer class="text-center py-10 border-t border-green-500">
+    <p>© 2026 CYBER BREAKFASTS — WASTELAND EDITION</p>
   </footer>
 
 </body>
